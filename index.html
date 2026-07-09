@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Mis Vitaminas</title>
+
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#0F766E" />
+
+<!-- iOS: instalar como app de pantalla de inicio -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Vitaminas" />
+<link rel="apple-touch-icon" href="icons/icon-180.png" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>💊 Mis Vitaminas</h1>
+
+    <div class="streak-card">
+      <div class="streak-number" id="streakNumber">0</div>
+      <div class="streak-label">días seguidos</div>
+    </div>
+
+    <button id="takeBtn" class="take-btn">Tomé mis vitaminas hoy</button>
+
+    <p id="status" class="status"></p>
+
+    <div class="week" id="week"></div>
+
+    <p class="hint" id="reminderHint"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
